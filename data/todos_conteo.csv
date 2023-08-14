@@ -1,0 +1,41 @@
+"parametro","mes","indice","conteo_dias"
+"todos","enero","Buena",1
+"todos","enero","Aceptable",1
+"todos","enero","Mala",17
+"todos","enero","Muy Mala",10
+"todos","enero","Ext. Mala",3
+"todos","febrero","Aceptable",1
+"todos","febrero","Mala",17
+"todos","febrero","Muy Mala",8
+"todos","febrero","Ext. Mala",2
+"todos","marzo","Aceptable",1
+"todos","marzo","Mala",13
+"todos","marzo","Muy Mala",13
+"todos","marzo","Ext. Mala",4
+"todos","abril","Mala",15
+"todos","abril","Muy Mala",14
+"todos","abril","Ext. Mala",1
+"todos","mayo","Mala",21
+"todos","mayo","Muy Mala",10
+"todos","junio","Buena",1
+"todos","junio","Aceptable",8
+"todos","junio","Mala",19
+"todos","junio","Muy Mala",2
+"todos","julio","Aceptable",9
+"todos","julio","Mala",21
+"todos","julio","Muy Mala",1
+"todos","agosto","Aceptable",15
+"todos","agosto","Mala",16
+"todos","septiembre","Buena",4
+"todos","septiembre","Aceptable",16
+"todos","septiembre","Mala",10
+"todos","octubre","Buena",2
+"todos","octubre","Aceptable",4
+"todos","octubre","Mala",19
+"todos","octubre","Muy Mala",6
+"todos","noviembre","Aceptable",1
+"todos","noviembre","Mala",23
+"todos","noviembre","Muy Mala",6
+"todos","diciembre","Mala",18
+"todos","diciembre","Muy Mala",12
+"todos","diciembre","Ext. Mala",1
