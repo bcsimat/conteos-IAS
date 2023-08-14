@@ -24,4 +24,4 @@ El límite superior de la categoría *Aceptable* concuerda con los valores lími
 
 En 2022 
 
-![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/O31h_conteo_v2.png)
+![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/todos_conteo_v2.png)
