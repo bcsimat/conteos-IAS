@@ -1,0 +1,41 @@
+"parametro","mes","indice","conteo_dias"
+"pm25_cat","enero","Aceptable",13
+"pm25_cat","enero","Mala",14
+"pm25_cat","enero","Muy Mala",3
+"pm25_cat","enero","Ext. Mala",1
+"pm25_cat","febrero","Buena",1
+"pm25_cat","febrero","Aceptable",15
+"pm25_cat","febrero","Mala",12
+"pm25_cat","marzo","Aceptable",13
+"pm25_cat","marzo","Mala",14
+"pm25_cat","marzo","Muy Mala",3
+"pm25_cat","marzo","Ext. Mala",1
+"pm25_cat","abril","Aceptable",12
+"pm25_cat","abril","Mala",12
+"pm25_cat","abril","Muy Mala",6
+"pm25_cat","mayo","Aceptable",12
+"pm25_cat","mayo","Mala",19
+"pm25_cat","junio","Buena",9
+"pm25_cat","junio","Aceptable",17
+"pm25_cat","junio","Mala",4
+"pm25_cat","julio","Buena",1
+"pm25_cat","julio","Aceptable",17
+"pm25_cat","julio","Mala",12
+"pm25_cat","julio","Muy Mala",1
+"pm25_cat","agosto","Buena",4
+"pm25_cat","agosto","Aceptable",20
+"pm25_cat","agosto","Mala",7
+"pm25_cat","septiembre","Buena",12
+"pm25_cat","septiembre","Aceptable",15
+"pm25_cat","septiembre","Mala",3
+"pm25_cat","octubre","Buena",3
+"pm25_cat","octubre","Aceptable",6
+"pm25_cat","octubre","Mala",21
+"pm25_cat","octubre","Muy Mala",1
+"pm25_cat","noviembre","Buena",1
+"pm25_cat","noviembre","Aceptable",3
+"pm25_cat","noviembre","Mala",22
+"pm25_cat","noviembre","Muy Mala",4
+"pm25_cat","diciembre","Aceptable",6
+"pm25_cat","diciembre","Mala",20
+"pm25_cat","diciembre","Muy Mala",5
