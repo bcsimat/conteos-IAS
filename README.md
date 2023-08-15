@@ -28,7 +28,7 @@ En el año 2022 se registraron seis días con calidad del aire Extremadamente Ma
 
 ![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/todos_conteo_v3.svg) Figura 1. Cálculo del IAS para los tres contaminantes, ozono y partículas. Izquierda, mosaico de valores diarios por mes. Derecha, número de días con diferente categoría del índice por mes.
 
-Cuando se obtiene el IAS únicamente para Ozono, podemos observar que los meses con mayor cantidad de días malos y muy malos fueron marzo, abril y mayo, correspondientes a la temporada seca caliente o _temporada de ozono_. En el mes de mayo hubo 9 días con calidad de aire muy mala, del 2 al 6 y del 19 al 22 (Figura 2), fechas en las cuales se activaron dos de las seis contingencias que se activaron en el año 2022.
+Cuando se obtiene el IAS únicamente para Ozono, podemos observar que los meses con mayor cantidad de días malos y muy malos fueron marzo, abril y mayo, correspondientes a la temporada seca caliente o _temporada de ozono_. En el mes de mayo hubo 9 días con calidad de aire muy mala, del 2 al 6 y del 19 al 22 (Figura 2), fechas en las cuales se activaron tres de las seis contingencias ambientales atmosféricas por ozono que se activaron en el año 2022.
 
 ![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/O31h_conteo.png) Figura 2. Cálculo del IAS para ozono. Izquierda, mosaico de valores diarios por mes. Derecha, número de días con diferente categoría del índice por mes.
 
