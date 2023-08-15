@@ -41,7 +41,7 @@ o3.1h <- o31h %>% filter(!id_station %in% transporte) %>% # se eliminan estacion
   group_by(fecha) %>%
   summarise(maximo = max(valor, na.rm = T)) %>%
   mutate(maximo = maximo/1000, # unidades en ppb, convertir a ppm
-         # Intervalos para obtener el índice para ozono 1h
+         # Intervalos para obtener el índice para ozono 1h NOM-172-SEMARNAT-2019
          o31h_cat = case_when(maximo <= 0.051 ~ 1,
                           maximo > 0.051 & maximo <= 0.095 ~ 2,
                           maximo > 0.095 & maximo <= 0.135 ~ 3,
@@ -59,6 +59,7 @@ pms.nc2 <- pms.nc %>% filter(!id_station %in% transporte) %>%
                               PM10 %in% 76:155 ~ 3,
                               PM10 %in% 156:235 ~ 4,
                               PM10 >= 236 ~ 5, TRUE ~ 0),
+         # Intervalos para obtener el índice para particulas NOM-172-SEMARNAT-2019
          pm25_cat = case_when(PM2.5 %in% 0:25 ~ 1,
                               PM2.5 %in% 26:45 ~ 2,
                               PM2.5 %in% 46:79 ~ 3,
@@ -102,12 +103,12 @@ cat.x.mes$todos = cat.ias %>% group_by(parametro, mes, indice) %>% tally() %>% u
 grisosc = "#6F7271"
 grisclaro = "#DFDFDF"
 
-# mifonts
+# fuentes 
 # desde google
 font_add_google(name = "Quicksand", family = "qsand")
 # desde archivo de PC
-font_add(family = "qsand", regular = "../Quicksand/static/Quicksand-Regular.ttf",
-         bold = "../Quicksand/static/Quicksand-Bold.ttf")
+#font_add(family = "qsand", regular = "../data/Quicksand/static/Quicksand-Regular.ttf",
+ #        bold = "../data/Quicksand/static/Quicksand-Bold.ttf")
 
 showtext_auto()
 mifont = "qsand"
@@ -119,14 +120,14 @@ ias.plots <- function(d) {
              position = position_dodge(width = 1)) +
     geom_vline(xintercept = 1:13 - 0.5, color = grisclaro, size = 0.8) +
     geom_hline(yintercept = -1:6 * 5, color = grisclaro, size = 0.5, alpha = 0.5) +
-    scale_fill_manual(values = c("Buena" = "#9ACA3C",
-                                 "Aceptable" = "#F7EC0F",
-                                 "Mala" = "#F8991D",
-                                 "Muy Mala" = "#ED2124",
-                                 "Ext. Mala" = "#7D287D")) +
+    scale_fill_manual(values = c("Buena" = "#00e400", # colores oficiales del IAS
+                                 "Aceptable" = "#ffff00",
+                                 "Mala" = "#ff7e00",
+                                 "Muy Mala" = "#ff0000",
+                                 "Ext. Mala" = "#8f3f97")) +
     scale_y_continuous(name = "Número de días", breaks = 0:6 *5) +
     theme_bw(base_family = mifont, base_size = 24) +
-    coord_curvedpolar()
+    coord_curvedpolar() # grafico circular
   
   # Obtener los breaks del eje y
   brk <- ggplot_build(p1)$layout$panel_params[[1]]$r.major
@@ -165,11 +166,11 @@ mosaico.plot <- mosaico.dat %>% lapply(., function(x)
   ggplot(data = x) +
     geom_tile(aes(x = mes, y = dia, fill = ias),
               color = "white", lwd = 1, linetype = 1) +
-    scale_fill_manual(values = c("Buena" = "#9ACA3C",
-                                 "Aceptable" = "#F7EC0F",
-                                 "Mala" = "#F8991D",
-                                 "Muy Mala" = "#ED2124",
-                                 "Ext. Mala" = "#7D287D")) +
+    scale_fill_manual(values = c("Buena" = "#00e400", # colores oficiales del IAS
+                                 "Aceptable" = "#ffff00",
+                                 "Mala" = "#ff7e00",
+                                 "Muy Mala" = "#ff0000",
+                                 "Ext. Mala" = "#8f3f97")) +
     scale_y_continuous(name = "", trans = "reverse",
                        breaks = unique(x$dia), expand = c(0,0)) +
     scale_x_discrete(name = "", position = "top") +
