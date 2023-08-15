@@ -24,6 +24,12 @@ Las entidades federativas que cuenten con sistema de monitoreo de calidad del ai
 La Ciudad de México cuenta con 34 estaciones de monitoreo continuo de las cuales se eliminan las estaciones consideradas de transporte de contaminantes (ACO, MON, MPA, AJU, INN) y se utilizan 29 para el cálculo del IAS.
 Los datos horarios de los contaminantes fueron descargados de la página oficial de la Dirección de Monitoreo Atmosférico de la CDMX (http://www.aire.cdmx.gob.mx/default.php), para ozono las concentraciones horarias y para partículas los datos de NowCast, ya que estos indicadores suelen tener las concentraciones más altas y se toman como criterio para declarar Contingencias Ambientales Atmosféricas (PCAA).
 
-En el año 2022 se registraron seis días con calidad del aire Extremadamente Mala tomando en cuenta los tres contaminantes (Ozono y PMs), en los meses de enero, febrero, marzo, abril y diciembre, correspondientes a la temporada de secas. Aunque ninguna de las fechas coincide con la activación de contingencia ambiental atmosféricas (http://www.aire.cdmx.gob.mx/descargas/ultima-hora/calidad-aire/pcaa/pcaa-historico-contingencias.pdf)
+En el año 2022 se registraron seis días con calidad del aire Extremadamente Mala tomando en cuenta los tres contaminantes (Ozono y PMs), en los meses de enero, febrero, marzo, abril y diciembre, correspondientes a la temporada de secas (Figura 1). Aunque ninguna de las fechas coincide con la activación de contingencia ambiental atmosféricas (http://www.aire.cdmx.gob.mx/descargas/ultima-hora/calidad-aire/pcaa/pcaa-historico-contingencias.pdf).
 
-![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/todos_conteo_v3.png)
+![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/todos_conteo_v3.svg) Figura 1. Cálculo del IAS para los tres contaminantes, ozono y partículas. Izquierda, mosaico de valores diarios por mes. Derecha, número de días con diferente categoría del índice por mes.
+
+Cuando se obtiene el IAS únicamente para Ozono, podemos observar que los meses con mayor cantidad de días malos y muy malos fueron marzo, abril y mayo, correspondientes a la temporada seca caliente o _temporada de ozono_. En el mes de mayo hubo 9 días con calidad de aire muy mala, del 2 al 6 y del 19 al 22 (Figura 2), fechas en las cuales se activaron dos de las seis contingencias que se activaron en el año 2022.
+
+![conteo-ozono](https://github.com/bcsimat/conteos-IAS/blob/main/figs/O31h_conteo.png) Figura 2. Cálculo del IAS para ozono. Izquierda, mosaico de valores diarios por mes. Derecha, número de días con diferente categoría del índice por mes.
+
+
